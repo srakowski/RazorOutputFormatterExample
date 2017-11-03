@@ -1,0 +1,8 @@
+﻿@model System.Collections.Generic.IEnumerable<RazorOutputFormatterExample.Models.Gargoyle>
+
+<h1>The Gargoyles</h1>
+
+@foreach (var gargoyle in Model)
+{
+    Html.RenderPartial("Gargoyle", gargoyle);
+}

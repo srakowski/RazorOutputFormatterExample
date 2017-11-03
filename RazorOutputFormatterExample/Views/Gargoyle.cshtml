@@ -1,0 +1,13 @@
+﻿@model RazorOutputFormatterExample.Models.Gargoyle
+
+<h2>@Model.Name</h2>
+<hr />
+<h3>About</h3>
+<p>
+    This gargoyle is @if (!Model.IsLeader) { <span>not</span> } the leader of the Gargoyles.
+</p>
+<p>
+    This gargoyle's color is:
+    <div style="width:100px; height:100px; background-color: @Model.Color"></div>
+</p>
+
